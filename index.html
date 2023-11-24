@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Netclone</title>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <img class="logo" src="./src/imagens/Netflix-Brand-Logo.png" alt="">
+        <img class="avatar" src="./src/imagens/Netflix-avatar.png" alt="">
+    </div>
+
+    <header class="banner">
+        <div class="banner__contents">
+            <h1 class="title">Sandman</h1>
+            <div class="buttons">
+                <button class="button">Assistir</button>
+                <button class="button">Minha Lista</button>
+            </div>
+            <h1 class="descrition"> Sandman é uma série de ficção da Netflix que mistura drama com fantasia em uma narrativa imaginativa sobre Morpheus, a entidade que personifica os sonhos.</h1>
+        </div>
+        <div class="fadebotton"></div>
+    </header>
+
+    <div class="row">
+        <h2>ORIGINAIS NETFLIX</h2>
+        <div class="row__posters">
+            <img class="row__poster row__posterlarge" src="./src/imagens/imagem1.jpg" alt="">
+            <img class="row__poster row__posterlarge" src="./src/imagens/img2.jpg" alt="">
+            <img class="row__poster row__posterlarge" src="./src/imagens/img33.jpg" alt="">
+            <img class="row__poster row__posterlarge" src="./src/imagens/img44.webp" alt="">
+            <img class="row__poster row__posterlarge" src="./src/imagens/img5.jpg" alt="">
+            <img class="row__poster row__posterlarge" src="./src/imagens/img6.webp" alt="">
+            <img class="row__poster row__posterlarge" src="./src/imagens/img7.jpg" alt="">
+            <img class="row__poster row__posterlarge" src="./src/imagens/oito.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="row">
+        <h2>OUTROS</h2>
+        <div class="row__posters">
+            <img class="row__poster row__posterlarge" src="./src/imagens/11111ç.jpg" alt="">
+            <img class="row__poster row__posterlarge" src="./src/imagens/2222ç.jpg" alt="">
+            <img class="row__poster row__posterlarge" src="./src/imagens/333ç.webp" alt="">
+            <img class="row__poster row__posterlarge" src="./src/imagens/44ç.jpg" alt="">
+            <img class="row__poster row__posterlarge" src="./src/imagens/5ç.jpg" alt="">
+            <img class="row__poster row__posterlarge" src="./src/imagens/6ç.jpg" alt="">
+            <img class="row__poster row__posterlarge" src="./src/imagens/7ç.jpg" alt="">
+            <img class="row__poster row__posterlarge" src="./src/imagens/8ç.jpg" alt="">
+        </div>
+    </div>
+
+     <script>
+        const nav = document.getElementById('nav')
+        window.addEventListener('scroll', ()=>{
+            if(window.scrollY >= 100){
+            nav.classList.add('nav__black');
+            } else{
+             nav.classList.remove('nav__black');
+            }
+        })
+     </script>
+
+</body>
+</html>
